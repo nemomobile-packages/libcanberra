@@ -63,10 +63,10 @@ rm -rf %{buildroot}/%{_datadir}/vala
 %defattr(-,root,root)
 %doc LGPL
 %{_libdir}/libcanberra.so.*
-%dir %{_libdir}/libcanberra-%{version}
-%{_libdir}/libcanberra-%{version}/libcanberra-pulse.so
-%{_libdir}/libcanberra-%{version}/libcanberra-null.so
-%{_libdir}/libcanberra-%{version}/libcanberra-multi.so
+%dir %{_libdir}/libcanberra-0.30
+%{_libdir}/libcanberra-0.30/libcanberra-pulse.so
+%{_libdir}/libcanberra-0.30/libcanberra-null.so
+%{_libdir}/libcanberra-0.30/libcanberra-multi.so
 #%{_docdir}/libcanberra/README
 
 %files devel
