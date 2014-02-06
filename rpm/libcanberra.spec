@@ -5,6 +5,7 @@ Summary: Portable Sound Event Library
 Group:   System Environment/Libraries
 Source0: http://0pointer.de/lennart/projects/libcanberra/libcanberra-%{version}.tar.xz
 Patch0:  fix-automake.patch
+Patch1:  support_ignore_return_value.patch
 
 License: LGPLv2+
 Url:     http://git.0pointer.de/?p=libcanberra.git;a=summary
@@ -45,6 +46,7 @@ Development Files for libcanberra Client Development
 %setup -q -n %{name}-%{version}/%{name}
 
 %patch0 -p1
+%patch1 -p1
 
 %build
 %autogen 
